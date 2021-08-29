@@ -9,4 +9,8 @@
       <ProjectReference Include="..\IOKode.Inake\IOKode.Inake.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="ConsoleAppFramework" Version="3.3.1" />
+    </ItemGroup>
+
 </Project>
