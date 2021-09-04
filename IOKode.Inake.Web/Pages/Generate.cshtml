@@ -1,0 +1,23 @@
+@page
+@model IOKode.Inake.Web.Pages.GeneratePage
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Inake</title>
+    </head>
+    <body>
+        <h1>Generated @Model.Words words with @Model.Letters letters each word.</h1>
+        <ul>
+            @foreach (var word in Model.GeneratedWords)
+            {
+                <li>@word</li>
+            }
+        </ul>
+    </body>
+</html>

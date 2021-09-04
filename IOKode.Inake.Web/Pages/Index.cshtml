@@ -1,0 +1,25 @@
+@page
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Inake</title>
+    </head>
+    <body>
+        <form asp-page="/Generate" method="get">
+            <label for="Words">Words:</label>
+            <input name="Words" id="Words" value="1">
+
+            <label for="Letters">Letters:</label>
+            <input name="Letters" id="Letters" value="8">
+
+            <input type="submit"/>
+        </form>
+    </body>
+</html>
